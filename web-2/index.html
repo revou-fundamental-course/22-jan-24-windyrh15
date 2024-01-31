@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - Grocery-Web-2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <img src="img/vegetable-2.jpg" alt="_logo">
+        <ul class="navigation-item">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#our-product">Our Product</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>Hai dan Selamat Datang di E-Grocery</h1>
+        <h4>"Get your food healty in here!"</h4>
+        <img src="img/vegetable-2.jpg" alt="Header Img">
+    </header>
+    <div class="our-product" id="our-product">
+        <h1>Our Product</h1>
+        <div class="list-product">
+            <div>
+                <div class="circle" style="background-image: url('img/vegetable-1.jpg');"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, corrupti.</p>
+            </div>
+            <div>
+                <div class="circle" style="background-image: url('img/vegetable-1.jpg');"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio numquam repudiandae mollitia doloribus eligendi? Omnis.</p>
+            </div>
+            <div>
+                <div class="circle" style="background-image: url('img/vegetable-1.jpg');"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="inquiry-customer" id="contact">
+            <div class="message">
+                <h1>Message Us</h1>
+                <form action="#" class="inquiry-form">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" placeholder="nama anda">
+                    <label for="tanggal-lahir">Tanggal Lahir :</label>
+                    <input type="date" id="tanggal-lahir">
+                    <label class="gender-label" for="jenis-kelamin">Jenis Kelamin :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki">
+                            <label for="laki-laki">Laki-laki</label>
+                            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    <label for="pesan">Pesan :</label>
+                    <input type="text" id="pesan" name="pesan" placeholder="Pesan yang ingin anda sampaikan">
+                    <button class="btn-kirim">Kirim</button>
+                </form>
+            </div>       
+        <div class="output">
+            <h2>Current time :</h2>
+            <h2>Nama :</h2>
+            <h2>Tanggal Lahir :</h2>
+            <h2>Jenis Kelamin :</h2>
+            <h2>Pesan :</h2>
+        </div>
+    </div>
+    <footer>
+        <p>Terms of service Privacy Policy &copy; 2024 WindyRH</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
