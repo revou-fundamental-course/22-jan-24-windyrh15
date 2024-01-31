@@ -55,78 +55,9 @@
         /* MY CSS ------------------------------------------------------------------- */
 
         
-        /* CSS untuk layar handphone */
-        @media only screen and (max-width: 600px) {
-            .container {
-                width: 100%;
-            }
-
-            nav {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            nav img {
-                margin: 10px 0;
-            }
-
-            nav div ul {
-                flex-direction: column;
-                margin-top: 10px;
-            }
-
-            nav div ul li {
-                margin-bottom: 5px;
-            }
-
-            header h1 {
-                width: 100%;
-                font-size: 1.5rem;
-            }
-
-            header p {
-                width: 100%;
-                font-size: 0.9rem;
-            }
-
-            main .home {
-                flex-direction: column;
-            }
-
-            main .home .content-left,
-            main .home .content-right {
-                width: 100%;
-                padding: 20px;
-                margin-right: 0;
-            }
-
-            main .home .content-right form label,
-            main .home .content-right form select {
-                width: 100%;
-            }
-
-            main .ourPackage h1 {
-                padding: 30px;
-                font-size: 20px;
-            }
-
-            main .closing p {
-                width: 100%;
-            }
-
-            main .closing .action-btn {
-                width: 100%;
-            }
-
-            footer p {
-                width: 100%;
-            }
-        }
-
-    /* CSS untuk layar tablet */
     @media only screen and (min-width: 601px) and (max-width: 1024px) {
         .container {
+            width: 60vw;
             width: 100%;
         }
 
@@ -157,17 +88,29 @@
         header p {
             width: 100%;
             font-size: 0.9rem;
+            text-align: center;
         }
 
         main .home {
             flex-direction: column;
+            justify-content:center;
+            align-items:center;
         }
 
-        main .home .content-left,
+        main .home .content-left {
+            width: 100%;
+            padding: 20px;
+            margin-right: 0;
+        }
+        
         main .home .content-right {
             width: 100%;
             padding: 20px;
             margin-right: 0;
+        }
+
+        main .home .content-right {
+            margin-top:60px;
         }
 
         main .home .content-right form label,
@@ -478,6 +421,10 @@
             cursor: pointer;
         }
 
+        main .home .content-right form .sendButton:hover{
+            background-color: #1f262e;
+        }
+        
         main .ourPackage {
             display: flex;
             flex-direction: column;
@@ -627,6 +574,10 @@
             color: white;
 
             cursor: pointer;
+        }
+
+        main .closing .action-btn:hover{
+            background-color: #1f262e;
         }
 
         /* Footer section ---------------------- */
